@@ -297,6 +297,50 @@
     .js .rv.in { opacity: 1; transform: none; }
     @media (prefers-reduced-motion: reduce) { .js .rv { opacity: 1; transform: none; transition: none; } html { scroll-behavior: auto; } }
 
+    /* Look „regaldex“: motif=hazard, soft=deep, edge=flat, cards=rail, steps=cards, head=tag, h2=caps, duty=band, faq=boxes, radius=3 (looks.js) */
+    :root { --radius: 3px; }
+    .btn { border-radius: 4px; }
+    .btn.sm { border-radius: 3px; }
+    .ic { border-radius: 4px; }
+    html.dark { --bg-soft: color-mix(in oklab, var(--bg) 62%, #000); }
+    section.soft { box-shadow: inset 0 1px 0 rgba(255,255,255,.05), inset 0 -1px 0 rgba(255,255,255,.05); }
+    section.soft { position: relative; isolation: isolate; }
+    section.soft::before { content: ''; position: absolute; inset: 0; z-index: -1; pointer-events: none; border-radius: inherit;
+      background: var(--accent); opacity: 0.05;
+      -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewBox='0 0 44 44'%3E%3Cpath d='M-11 11L11-11M0 44L44 0M33 55L55 33' fill='none' stroke='%23000' stroke-width='11'/%3E%3C/svg%3E"), linear-gradient(100deg, transparent 18%, #000 75%); -webkit-mask-size: 44px 44px, 100% 100%; -webkit-mask-repeat: repeat, no-repeat; -webkit-mask-composite: source-in;
+      mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewBox='0 0 44 44'%3E%3Cpath d='M-11 11L11-11M0 44L44 0M33 55L55 33' fill='none' stroke='%23000' stroke-width='11'/%3E%3C/svg%3E"), linear-gradient(100deg, transparent 18%, #000 75%); mask-size: 44px 44px, 100% 100%; mask-repeat: repeat, no-repeat; mask-composite: intersect; }
+    @media (max-width: 700px) { section.soft::before { opacity: 0.035; } }
+    .feature { border-left: 3px solid var(--accent); border-radius: 3px var(--radius) var(--radius) 3px; padding: 22px 24px;
+      display: grid; grid-template-columns: auto 1fr; gap: 8px 12px; align-items: center; }
+    .feature .ic { width: 30px; height: 30px; margin: 0; grid-row: auto; background: none; }
+    .feature .ic .i { width: 22px; height: 22px; }
+    .feature h3 { margin: 0; }
+    .feature p { grid-column: 1 / -1; }
+    @media (max-width: 600px) { .feature { padding: 16px 18px; grid-template-columns: auto 1fr; } .feature .ic { grid-row: auto; } }
+    .flow { grid-template-columns: 1fr; gap: 0; }
+    .flow > div:last-child { display: none; }
+    .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+    .steps li { padding: 70px 24px 24px; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); }
+    .steps li:last-child { padding-bottom: 24px; }
+    .steps li::before { content: counter(s, decimal-leading-zero); left: 24px; top: 22px; width: auto; height: auto; padding: 0;
+      background: none; color: var(--accent-text); font-size: 30px; font-weight: 780; letter-spacing: -.03em; display: block; line-height: 1; }
+    .steps li:not(:last-child)::after { content: ''; left: auto; right: 24px; top: 36px; bottom: auto; width: 34%; height: 1px;
+      background: linear-gradient(90deg, color-mix(in oklab, var(--accent) 60%, transparent), transparent); }
+    @media (max-width: 600px) { .steps li { padding: 58px 18px 18px; } .steps li:last-child { padding-bottom: 18px; } .steps li::before { left: 18px; top: 18px; font-size: 26px; } }
+    .eyebrow { display: inline-block; padding: 5px 11px; font-size: 11.5px; text-transform: uppercase; letter-spacing: .12em;
+      border: 1px solid color-mix(in oklab, var(--accent) 50%, transparent); border-radius: calc(var(--radius) * .5);
+      background: color-mix(in oklab, var(--accent) 9%, transparent); margin-bottom: 14px; }
+    h2 { text-transform: uppercase; font-weight: 800; letter-spacing: -.012em; font-size: clamp(24px, 3vw, 34px); line-height: 1.12;
+      -webkit-hyphens: auto; hyphens: auto; overflow-wrap: break-word; }
+    .duty .rules { border-color: color-mix(in oklab, var(--accent) 45%, transparent);
+      background: linear-gradient(150deg, color-mix(in oklab, var(--accent) 30%, var(--bg)), color-mix(in oklab, var(--accent) 8%, var(--bg)) 70%); }
+    .duty .rules li { border-top-color: color-mix(in oklab, var(--accent) 22%, transparent); color: color-mix(in oklab, var(--ink) 80%, transparent); }
+    .duty .rules .ic { background: var(--accent); color: var(--on-accent); }
+    .faq details, .faq details:first-child { border: 1px solid var(--border); border-radius: var(--radius); background: var(--card); padding: 0 18px; margin-bottom: 10px; }
+    .faq details[open] { border-color: color-mix(in oklab, var(--accent) 45%, var(--border)); }
+    .faq summary { padding: 16px 0; }
+    .faq .a { padding: 0 0 18px; }
+
     /* Handy-Wand + Lichter in der App-Farbe (Kopfbereich) */
     .hero.walled { isolation: isolate; min-height: min(780px, 100svh); display: flex; align-items: center;
       background:
