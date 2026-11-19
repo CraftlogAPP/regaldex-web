@@ -24,7 +24,7 @@
   <meta name="twitter:image" content="https://regaldex.dexware.app/og-image.png" />
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"RegalDex","url":"https://regaldex.dexware.app/","description":"Regalinspektion nach DIN EN 15635 & DGUV Regel 108-007 lückenlos dokumentieren: 12-Punkte-Checkliste, Ampelverfahren, GPS-Stempel, Beweisfotos, Schadens-Management und PDF-Prüfbericht. Für Lagerbetreiber, Logistik, Handwerk und FM-Dienstleister in DACH.","operatingSystem":"Android","applicationCategory":"BusinessApplication","image":"https://regaldex.dexware.app/og-image.png","inLanguage":"de","offers":{"@type":"Offer","price":"0","priceCurrency":"EUR","description":"Kostenlos starten, Pro-Abo in der App"},"publisher":{"@type":"Organization","name":"Dexware","url":"https://dexware.app/"}}</script>
   <!-- seo:end -->
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Ist die Regalinspektion Pflicht?","acceptedAnswer":{"@type":"Answer","text":"Ja. Lagerregale sind Arbeitsmittel im Sinne der BetrSichV und müssen so geprüft werden, dass sie sicher genutzt werden können. DIN EN 15635 und DGUV Regel 108-007 beschreiben, wie das in der Praxis aussieht."}},{"@type":"Question","name":"Wie oft muss geprüft werden?","acceptedAnswer":{"@type":"Answer","text":"Üblich ist eine wöchentliche Sichtkontrolle durch den Sicherheitsbeauftragten Lager und mindestens alle 12 Monate eine Experteninspektion durch eine fachlich befähigte Person. RegalDex dokumentiert beide Prüfarten getrennt."}},{"@type":"Question","name":"Funktioniert RegalDex auch für mein Team?","acceptedAnswer":{"@type":"Answer","text":"Ja. Mit Pro lädst du Mitarbeiter per Betriebscode ein — alle dokumentieren unter einem Betrieb, jede Prüfung zeigt den Prüfer."}},{"@type":"Question","name":"Gibt es RegalDex auch am PC?","acceptedAnswer":{"@type":"Answer","text":"Ja — im Dexware-Dashboard siehst du Lager, Inspektionen, Schäden und Prüfberichte im Browser."}},{"@type":"Question","name":"Wo liegen meine Daten?","acceptedAnswer":{"@type":"Answer","text":"In einem EU-Rechenzentrum in Frankfurt. Keine Werbung, kein Tracking, kein Datenverkauf — Details in der Datenschutzerklärung."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Ist die Regalinspektion Pflicht?","acceptedAnswer":{"@type":"Answer","text":"Ja. Lagerregale sind Arbeitsmittel im Sinne der BetrSichV und müssen so geprüft werden, dass sie sicher genutzt werden können. DIN EN 15635 und DGUV Information 208-061 beschreiben, wie das in der Praxis aussieht."}},{"@type":"Question","name":"Wie oft muss geprüft werden?","acceptedAnswer":{"@type":"Answer","text":"Üblich ist eine wöchentliche Sichtkontrolle durch den Sicherheitsbeauftragten Lager und mindestens alle 12 Monate eine Experteninspektion durch eine fachlich befähigte Person. RegalDex dokumentiert beide Prüfarten getrennt."}},{"@type":"Question","name":"Funktioniert RegalDex auch für mein Team?","acceptedAnswer":{"@type":"Answer","text":"Ja. Mit Pro lädst du Mitarbeiter per Betriebscode ein — alle dokumentieren unter einem Betrieb, jede Prüfung zeigt den Prüfer."}},{"@type":"Question","name":"Gibt es RegalDex auch am PC?","acceptedAnswer":{"@type":"Answer","text":"Ja — im Dexware-Dashboard siehst du Lager, Inspektionen, Schäden und Prüfberichte im Browser."}},{"@type":"Question","name":"Wo liegen meine Daten?","acceptedAnswer":{"@type":"Answer","text":"In einem EU-Rechenzentrum in Frankfurt. Keine Werbung, kein Tracking, kein Datenverkauf — Details in der Datenschutzerklärung."}}]}</script>
   <link rel="preload" href="assets/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin />
   <style>
     @font-face { font-family: 'Inter'; src: url('assets/inter-latin-var.woff2') format('woff2');
@@ -454,9 +454,14 @@
     @media (max-width: 400px) {
       .ios-tab { display: flex; }
       .ipw-visual { height: 420px; }
-      .ipw.tall .ipw-visual { height: 470px; }
+      .ipw.tall .ipw-visual { height: 484px; }
       .ipw-visual .phone.a { --pw: 186px; } .ipw-visual .phone.b { --pw: 160px; }
       .ipw-home { left: 12%; }
+    }
+    /* Schmale Handys (360 px): beide Bildschirme nebeneinander, ohne dass der vordere den hinteren verdeckt. */
+    @media (max-width: 374px) {
+      .ipw.tall .ipw-visual { height: 462px; }
+      .ipw-visual .phone.a { --pw: 172px; } .ipw-visual .phone.b { --pw: 150px; }
     }
   </style>
   <script>document.documentElement.classList.add('js')</script>
@@ -498,7 +503,7 @@
         <div class="rv">
           <p class="eyebrow">Rechtsgrundlage</p>
           <h2>Wenn im Lager was passiert, zählt deine Inspektion</h2>
-          <p class="lead">Ein Stapler touchiert die Stütze, drei Wochen später kippt das Fach: Dann zählt nur noch die Dokumentation. Lagerregale sind Arbeitsmittel. Grundlage: BetrSichV, DIN EN 15635 und DGUV Regel 108-007.</p>
+          <p class="lead">Ein Stapler touchiert die Stütze, drei Wochen später kippt das Fach: Dann zählt nur noch die Dokumentation. Lagerregale sind Arbeitsmittel. Grundlage: BetrSichV, DIN EN 15635 und DGUV Information 208-061.</p>
         </div>
         <ul class="rules rv">
           <li><span class="ic"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" /><circle cx="12" cy="12" r="3" /></svg></span><span><b>Regelmäßig ansehen</b>Sichtkontrolle durch den Sicherheitsbeauftragten Lager, üblich wöchentlich.</span></li>
@@ -533,12 +538,12 @@
           <ol class="ipw-steps">
             <li><span><b>Im Browser öffnen</b> und anmelden — oder kostenlos ein Konto anlegen.</span></li>
             <li><span><b>„Teilen“ → „Zum Home-Bildschirm“</b> antippen.</span></li>
-            <li><span><b>Fertig:</b> RegalDex liegt wie eine App auf deinem Startbildschirm.</span></li>
+            <li><span><b>Fertig:</b> RegalDex liegt wie eine App auf deinem Home-Bildschirm.</span></li>
           </ol>
           <div class="cta"><a class="btn" href="https://dashboard.dexware.app/app/regaldex/vor-ort" target="_blank" rel="noopener">Im Browser öffnen</a></div>
           <p class="fine">Gut zu wissen: Im Funkloch bleiben deine Eingaben auf dem Gerät und werden gesendet, sobald wieder Netz da ist. QR-Scan, Erinnerungen und einige Extras gibt es vorerst nur in der Android-App. Es gelten dieselben Gratis-Grenzen wie in der App.</p>
           <div class="ipw-buy">
-            <div class="ipw-buy-head"><b>RegalDex Pro direkt im Browser kaufen</b><small>Ohne App-Store — Karte oder PayPal, Preise inkl. USt.</small></div>
+            <div class="ipw-buy-head"><b>RegalDex Pro direkt im Browser kaufen</b><small>Ohne App Store — Karte oder PayPal, Preise inkl. MwSt.</small></div>
             <div class="ipw-plans"><div><span>Jährlich</span><b>79,99 €</b><small>pro Jahr</small></div><div><span>Monatlich</span><b>9,99 €</b><small>pro Monat</small></div></div>
             <span class="btn off" aria-disabled="true">In Kürze verfügbar</span>
             <p>14 Tage Geld zurück · jederzeit kündbar · Verkäufer und Zahlungsabwicklung: Paddle. Der Tarif gilt für dein Konto — im Browser und später in der App. Bis dahin gibt es Pro in der Android-App.</p>
@@ -624,7 +629,7 @@
           <p class="ask"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2" /><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></svg><span>Noch etwas offen? <a href="mailto:support@dexware.app?subject=RegalDex">support@dexware.app</a></span></p>
         </div>
         <div class="rv">
-          <details><summary>Ist die Regalinspektion Pflicht?<svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg></summary><div class="a">Ja. Lagerregale sind Arbeitsmittel im Sinne der BetrSichV und müssen so geprüft werden, dass sie sicher genutzt werden können. DIN EN 15635 und DGUV Regel 108-007 beschreiben, wie das in der Praxis aussieht.</div></details>
+          <details><summary>Ist die Regalinspektion Pflicht?<svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg></summary><div class="a">Ja. Lagerregale sind Arbeitsmittel im Sinne der BetrSichV und müssen so geprüft werden, dass sie sicher genutzt werden können. DIN EN 15635 und DGUV Information 208-061 beschreiben, wie das in der Praxis aussieht.</div></details>
           <details><summary>Wie oft muss geprüft werden?<svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg></summary><div class="a">Üblich ist eine wöchentliche Sichtkontrolle durch den Sicherheitsbeauftragten Lager und mindestens alle 12 Monate eine Experteninspektion durch eine fachlich befähigte Person. RegalDex dokumentiert beide Prüfarten getrennt.</div></details>
           <details><summary>Funktioniert RegalDex auch für mein Team?<svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg></summary><div class="a">Ja. Mit Pro lädst du Mitarbeiter per Betriebscode ein — alle dokumentieren unter einem Betrieb, jede Prüfung zeigt den Prüfer.</div></details>
           <details><summary>Gibt es RegalDex auch am PC?<svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg></summary><div class="a">Ja — im <a href="https://dashboard.dexware.app/app/regaldex">Dexware-Dashboard</a> siehst du Lager, Inspektionen, Schäden und Prüfberichte im Browser.</div></details>
