@@ -35,11 +35,18 @@ Für Lagerleitung, Logistik, Handel und Handwerk.
 - Dexware Suite (Prüf-Paket): alle 9 Prüf-Apps der Suite (GurtDex, ToreDex, GerüstDex, FeuerDex, LeiterDex, RegalDex, PrüfDex, SchutzDex, HebeDex) für 24,99 € im Monat oder 199,99 € im Jahr (entspricht 16,67 € im Monat), ab 3 Prüf-Apps günstiger als einzeln.
 - Preise inkl. MwSt., Abo jederzeit kündbar.
 
+## Was RegalDex nicht ist
+
+- Kein Ersatz für die befähigte Person: RegalDex unterstützt ausschließlich bei der Dokumentation und ersetzt keine fachliche Beurteilung. Die Bewertung trifft die befähigte Person, die App hält sie fest.
+- Keine Rechtsberatung: Die Ratgeber von RegalDex geben die Vorschriften allgemein verständlich wieder und ersetzen keine Rechtsberatung.
+- Eine iPhone-App im App Store gibt es noch nicht; am iPhone und iPad läuft RegalDex im Browser (Regalinspektionen dokumentieren — mit Checkliste, Fotos und Unterschrift). QR-Scan, Erinnerungen und einige Extras gibt es vorerst nur in der Android-App.
+
 ## Kurz beantwortet
 
 - Was verlangt die DIN EN 15635 bei der Regalinspektion? Zwei Ebenen: eine regelmäßige Sichtkontrolle, meist wöchentlich, und mindestens alle 12 Monate eine Experteninspektion durch eine fachlich befähigte Person.
+- Wer darf die Regalinspektion durchführen? Die wöchentliche Sichtkontrolle übernimmt eine vom Betreiber beauftragte, unterwiesene Person, die jährliche Experteninspektion eine fachlich befähigte Person (Regalinspekteur), etwa ein entsprechend geschulter interner Mitarbeiter oder ein externer Sachkundiger.
 - Ist die Regalprüfung gesetzlich Pflicht? Ja. Lagerregale sind Arbeitsmittel im Sinne der BetrSichV, der Arbeitgeber lässt sie auf Grundlage seiner Gefährdungsbeurteilung prüfen. In Österreich und der Schweiz gibt es keine eigene gesetzliche Frist für ortsfeste Regale, dort zählen Norm und Gefährdungsbeurteilung.
-- Gibt es eine App für die Regalprüfung nach DIN EN 15635? RegalDex ist genau dafür gebaut: die 12 Prüfpunkte nach DIN EN 15635, Schäden mit Foto und Ampel, Regalzeilen mit Fach- und Feldlast und am Ende ein PDF fürs Prüfbuch.
+- Gibt es eine App für die Regalprüfung nach DIN EN 15635? Ja. RegalDex ist genau dafür gebaut: die 12 Prüfpunkte nach DIN EN 15635, Schäden mit Foto und Ampel, Regalzeilen mit Fach- und Feldlast und am Ende ein PDF fürs Prüfbuch.
 - Welche Regalschäden kommen am häufigsten vor? Angefahrene Stützen durch Staplerkontakt, verbogene Traversen, fehlende Sicherungsstifte, überschrittene Fach- oder Feldlast, fehlende Belastungsschilder sowie lockere Fußplatten und Bodenanker.
 - Was ist der Unterschied zwischen Fachlast und Feldlast? Die Fachlast gilt für eine einzelne Ebene, die Feldlast für alle Ebenen eines Regalfelds zusammen. Beide Grenzen gelten gleichzeitig, und die Feldlast ist oft kleiner als die Summe der Fachlasten.
 - Gibt es RegalDex auch am PC? Ja — im Dexware-Dashboard siehst du Lager, Inspektionen, Schäden und Prüfberichte im Browser.
