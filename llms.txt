@@ -66,7 +66,7 @@ Für Lagerleitung, Logistik, Handel und Handwerk.
 
 - [Fachlast und Feldlast: das Belastungsschild am Regal](https://regaldex.dexware.app/ratgeber-fachlast-feldlast.html): Fachlast oder Feldlast? Warum die Feldlast oft kleiner ist als alle Fachlasten zusammen, was aufs Belastungsschild am Regal gehört und was nach Umbau gilt.
 - [DIN EN 15635: Regalinspektion Schritt für Schritt](https://regaldex.dexware.app/ratgeber-regalinspektion-ablauf.html): Regalinspektion nach DIN EN 15635 in fünf Schritten: vorbereiten, Regale ablaufen, Stützen messen (5 mm / 3 mm), Schäden einstufen, Bericht schreiben.
-- [Regalinspektion nach DIN EN 15635: Fristen und Doku](https://regaldex.dexware.app/ratgeber-regalinspektion.html): Regalinspektion Pflicht? DIN EN 15635 verlangt wöchentliche Sichtkontrolle und mindestens jährlich eine Experteninspektion. Ratgeber zu Fristen, Ampelverfahren, typischen Schäden, Dokumentationspflicht und Regalinspekteur.
+- [Regalinspektion nach DIN EN 15635: Fristen und Doku](https://regaldex.dexware.app/ratgeber-regalinspektion.html): Regalinspektion nach DIN EN 15635: wöchentliche Sichtkontrolle, mindestens jährlich Experteninspektion. Fristen, Ampelverfahren, typische Schäden, Doku.
 
 ## Rechtliches
 
